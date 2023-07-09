@@ -1,0 +1,1 @@
+The Odin Project's Sign-up Form Project. Putting ideal practices to the test as well as form validation.
