@@ -18,6 +18,7 @@
       <div class="left-div">
         <div class="image-div">
           <img src="/images/halie-west-25xggax4bSA-unsplash.jpg" alt="" />
+          <div class="credit-text">Photo by Halie West on Unsplash</div>
           <div class="logo-div">
             <img src="/images/odin-lined.png" alt="" />
             ODIN
@@ -28,54 +29,51 @@
         <div class="top-div">
           <p>
             This is not a real online service! You know you need something like
-            this in your life to help you realize your deepest dreams. Sign up
-            now to get started.<br /><br />
+            this in your life to help you realize your deepest dreams. <br/>
+            Sign up now to get started.<br /><br />
 
             You <i>know</i> you want to.
           </p>
         </div>
         <div class="middle-div">
-          <form>
-            <legend>Let's do this!</legend>
-            <fieldset>
-              <div class="form-unit">
-                <label for="first_name">FIRST NAME</label>
-                <input type="text" name="first_name" id="first_name" />
-              </div>
-              <div class="form-unit">
-                <label for="last_name">LAST NAME</label>
-                <input type="text" name="last_name" id="last_name" />
-              </div>
-            </fieldset>
-            <fieldset>
-              <div class="form-unit">
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" />
-              </div>
-              <div class="form-unit">
-                <label for="tel">PHONE NUMBER</label>
-                <input type="tel" name="tel" id="tel" />
-              </div>
-            </fieldset>
-            <fieldset>
-              <div class="form-unit">
-                <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password" />
-              </div>
-              <div class="form-unit">
-                <label for="confirm_pass">CONFIRM PASSWORD</label>
-                <input
-                  type="confirm_pass"
-                  name="confirm_pass"
-                  id="confirm_pass"
-                />
-              </div>
-            </fieldset>
-          </form>
+            <form id="signup-form" onsubmit="return validateForm(event)">
+                <fieldset>
+                  <div class="form-unit">
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" name="first_name" id="first_name" required />
+                  </div>
+                  <div class="form-unit">
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" name="last_name" id="last_name" required />
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <div class="form-unit">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" required />
+                  </div>
+                  <div class="form-unit">
+                    <label for="tel">PHONE NUMBER</label>
+                    <input type="tel" name="tel" id="tel" required />
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <div class="form-unit">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" required />
+                  </div>
+                  <div class="form-unit">
+                    <label for="confirm_pass">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirm_pass" id="confirm_pass" required />
+                  </div>
+                </fieldset>
+              </form>
+              
         </div>
         <div class="bottom-div">
-          <button>Create Account</button>
-          <p>Already have an account? <a href="">Log in</a></p>
+            <button type="submit">Create Account</button>
+            <p id="form_error"></p>
+            <p>Already have an account? <a href="">Log in</a></p>
         </div>
       </div>
     </div>
