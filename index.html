@@ -5,33 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Sign-up Form</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="script.js"></script>
   </head>
   <body>
-    <div id="wrapper">
-      <div id="left-div">
-        IMAGE HERE
-        <div id="logo-div">LOGO HERE</div>
+    <div id="main-content">
+      <div class="left-div">
+        <div class="image-div">
+          <img src="/images/halie-west-25xggax4bSA-unsplash.jpg" alt="" />
+          <div class="logo-div">
+            <img src="/images/odin-lined.png" alt="" />
+            ODIN
+          </div>
+        </div>
       </div>
-      <div id="right-div">
-        <div class="grey-section">
-          This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams. Sing up now
-          to get started.
-          <br /><br />
-          You know you want to.
+      <div class="right-div">
+        <div class="top-div">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            now to get started.<br /><br />
+
+            You <i>know</i> you want to.
+          </p>
         </div>
-        <div id="form-section">
-          <div>First Name</div>
-          <div>Last Name</div>
-          <div>Email</div>
-          <div>Phone Number</div>
-          <div>Password</div>
-          <div>Confirm Password</div>
+        <div class="middle-div">
+          <form>
+            <legend>Let's do this!</legend>
+            <fieldset>
+              <div class="form-unit">
+                <label for="first_name">FIRST NAME</label>
+                <input type="text" name="first_name" id="first_name" />
+              </div>
+              <div class="form-unit">
+                <label for="last_name">LAST NAME</label>
+                <input type="text" name="last_name" id="last_name" />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div class="form-unit">
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email" />
+              </div>
+              <div class="form-unit">
+                <label for="tel">PHONE NUMBER</label>
+                <input type="tel" name="tel" id="tel" />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div class="form-unit">
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password" />
+              </div>
+              <div class="form-unit">
+                <label for="confirm_pass">CONFIRM PASSWORD</label>
+                <input
+                  type="confirm_pass"
+                  name="confirm_pass"
+                  id="confirm_pass"
+                />
+              </div>
+            </fieldset>
+          </form>
         </div>
-        <div class="grey-section">
+        <div class="bottom-div">
           <button>Create Account</button>
-          <div id="login-text">Already have an account? <a>Log in</a></div>
+          <p>Already have an account? <a href="">Log in</a></p>
         </div>
       </div>
     </div>
